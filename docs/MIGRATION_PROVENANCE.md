@@ -4,7 +4,7 @@ This repository intentionally starts with fresh public Git history rather than p
 
 ## Legacy source
 
-- Private legacy repository: `666drjekyll666-cloud/Move-Gamepad-Tooltips-legacy-private`
+- Private legacy repository: `NikichMods/Move-Gamepad-Tooltips-legacy-private`
 - Legacy public/mod name: **Move Gamepad Tooltips**
 - Accepted legacy version: **1.2.0**
 - Accepted freeze branch: `baseline/1.2.0-accepted`

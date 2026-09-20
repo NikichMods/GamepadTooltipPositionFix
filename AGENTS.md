@@ -1,12 +1,12 @@
 # Gamepad Tooltip Position Fix — Project Rules
 
-The global engineering baseline for this repository is `666drjekyll666-cloud/DevRules`. Before substantive implementation, read `ENGINEERING_RULES.md`, `CI_POLICY.md`, `GIT_WORKFLOW.md`, and `PROJECT_BOOTSTRAP.md` there. This file contains only project-specific additions and explicit exceptions.
+The global engineering baseline for this repository is `NikichMods/DevRules`. Before substantive implementation, read `ENGINEERING_RULES.md`, `CI_POLICY.md`, `GIT_WORKFLOW.md`, and `PROJECT_BOOTSTRAP.md` there. This file contains only project-specific additions and explicit exceptions.
 
 ## Project identity and scope
 
 - Public project: **Gamepad Tooltip Position Fix**.
 - Game: `Graveyard Keeper 1.407`.
-- Repository: `666drjekyll666-cloud/GamepadTooltipPositionFix`.
+- Repository: `NikichMods/GamepadTooltipPositionFix`.
 - Canonical project: `GamepadTooltipPositionFix.csproj`.
 - Canonical runtime source: `src/GamepadTooltipPositionFix.cs`.
 - Stable BepInEx GUID: `nikich.gyk.movegamepadtooltips` (legacy identity retained intentionally for upgrade compatibility).
@@ -25,7 +25,7 @@ Do not expand this small QoL mod into a generic tooltip/UI framework without exp
 
 This public repository must contain only redistributable project material: our source, documentation, build definitions, and our own release binaries/assets.
 
-Do not commit Graveyard Keeper assemblies, extracted game assets, decompiled game source, or research archives here. Reverse-engineering material that genuinely needs retention belongs in the private `666drjekyll666-cloud/GraveyardKeeperResearch` repository; durable verified facts needed by production belong in public project documentation.
+Do not commit Graveyard Keeper assemblies, extracted game assets, decompiled game source, or research archives here. Reverse-engineering material that genuinely needs retention belongs in the private `NikichMods/GraveyardKeeperResearch` repository; durable verified facts needed by production belong in public project documentation.
 
 ## Repository and release contract
 
@@ -50,7 +50,7 @@ Follow `DevRules/CI_POLICY.md`.
 
 ## Long-lived sources of truth
 
-Use `README.md`, `CHANGELOG.md`, `docs/MIGRATION_PROVENANCE.md`, `docs/TEST_BUILD_LOG.md`, `docs/PERFORMANCE_LIFECYCLE_AUDIT_1.3.0.md`, the canonical source/project files, and current public repository history. Historical pre-public evidence remains available in `666drjekyll666-cloud/Move-Gamepad-Tooltips-legacy-private`.
+Use `README.md`, `CHANGELOG.md`, `docs/MIGRATION_PROVENANCE.md`, `docs/TEST_BUILD_LOG.md`, `docs/PERFORMANCE_LIFECYCLE_AUDIT_1.3.0.md`, the canonical source/project files, and current public repository history. Historical pre-public evidence remains available in `NikichMods/Move-Gamepad-Tooltips-legacy-private`.
 
 Before reopening the tooltip positioning architecture, read `docs/PERFORMANCE_LIFECYCLE_AUDIT_1.3.0.md`. The native `BaseBubbleGUI.offset`, show/redraw lifecycle, and `BaseBubbleGUI.UpdateBubble` alternatives have already been investigated against Graveyard Keeper 1.407; do not repeat that research without contradictory evidence or a changed host/runtime.
 
