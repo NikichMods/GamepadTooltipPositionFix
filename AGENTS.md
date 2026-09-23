@@ -25,7 +25,7 @@ Do not expand this small QoL mod into a generic tooltip/UI framework without exp
 
 This public repository must contain only redistributable project material: our source, documentation, build definitions, and our own release binaries/assets.
 
-Do not commit Graveyard Keeper assemblies, extracted game assets, decompiled game source, or research archives here. Reverse-engineering material that genuinely needs retention belongs in the shared `NikichMods/GraveyardKeeperResearch` repository; durable verified facts needed by production belong in public project documentation.
+Do not commit Graveyard Keeper assemblies, extracted game assets, decompiled game source, or raw research archives here. Reusable **derived** reverse-engineering facts/evidence may be distilled into the shared `NikichMods/GraveyardKeeperResearch` repository; proprietary payloads and full decompilation material must not be committed there either. Durable project-specific facts needed by production belong in this repository's own documentation.
 
 ## Repository and release contract
 
