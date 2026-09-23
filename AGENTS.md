@@ -25,7 +25,7 @@ Do not expand this small QoL mod into a generic tooltip/UI framework without exp
 
 This public repository must contain only redistributable project material: our source, documentation, build definitions, and our own release binaries/assets.
 
-Do not commit Graveyard Keeper assemblies, extracted game assets, decompiled game source, or research archives here. Reverse-engineering material that genuinely needs retention belongs in the private `NikichMods/GraveyardKeeperResearch` repository; durable verified facts needed by production belong in public project documentation.
+Do not commit Graveyard Keeper assemblies, extracted game assets, decompiled game source, or research archives here. Reverse-engineering material that genuinely needs retention belongs in the shared `NikichMods/GraveyardKeeperResearch` repository; durable verified facts needed by production belong in public project documentation.
 
 ## Repository and release contract
 
@@ -55,3 +55,17 @@ Use `README.md`, `CHANGELOG.md`, `docs/MIGRATION_PROVENANCE.md`, `docs/TEST_BUIL
 Before reopening the tooltip positioning architecture, read `docs/PERFORMANCE_LIFECYCLE_AUDIT_1.3.0.md`. The native `BaseBubbleGUI.offset`, show/redraw lifecycle, and `BaseBubbleGUI.UpdateBubble` alternatives have already been investigated against Graveyard Keeper 1.407; do not repeat that research without contradictory evidence or a changed host/runtime.
 
 When chat memory conflicts with repository evidence, investigate the conflict before changing code.
+
+## Shared Graveyard Keeper research
+
+Cross-project Graveyard Keeper 1.407 host/runtime research is centralized in `NikichMods/GraveyardKeeperResearch`.
+
+Before starting a fresh investigation into vanilla/game-engine/UI/NGUI/data/lifecycle behavior:
+
+1. read this repository's own canonical verified-data / architecture docs first;
+2. consult `NikichMods/GraveyardKeeperResearch/docs/RESEARCH_INDEX.md` and the linked shared knowledge documents;
+3. search accepted local/shared test evidence and relevant history if the result has not yet been promoted;
+4. perform new static/runtime research or a probe only if the question remains open.
+
+Project-specific mechanics, product/UX decisions, release state, and build acceptance remain canonical in this repository. Reusable host/runtime facts that can serve multiple Graveyard Keeper mods should be promoted back into the shared research repository after acceptance rather than left only in chat, commit history, or a test log.
+
