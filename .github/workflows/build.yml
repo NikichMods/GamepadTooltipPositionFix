@@ -10,14 +10,6 @@ on:
       - 'GamepadTooltipPositionFix.csproj'
       - 'nuget.config'
       - '.github/workflows/build.yml'
-  push:
-    branches:
-      - main
-    paths:
-      - 'src/**'
-      - 'GamepadTooltipPositionFix.csproj'
-      - 'nuget.config'
-      - '.github/workflows/build.yml'
 
 permissions:
   contents: read
