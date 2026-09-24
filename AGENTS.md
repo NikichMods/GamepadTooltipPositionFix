@@ -45,7 +45,7 @@ Follow `DevRules/CI_POLICY.md`.
 - A meaningful source/build change on `main` may run the clean build automatically as a stable-line integrity check.
 - Manual `workflow_dispatch` remains available for candidate/handoff builds.
 - Documentation-only changes must not trigger the hosted build.
-- Windows remains the canonical runner until a cheaper runner is explicitly proven equivalent for this project.
+- Windows remains the canonical runner because it matches the established build toolchain. Change runners only for a concrete engineering benefit and after equivalence is proven; standard-runner minute price is not a reason to switch in this public repository.
 - A clean Release build remains required before a new DLL is handed to the user.
 
 ## Long-lived sources of truth
