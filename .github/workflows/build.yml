@@ -2,6 +2,14 @@ name: Build Gamepad Tooltip Position Fix
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'GamepadTooltipPositionFix.csproj'
+      - 'nuget.config'
+      - '.github/workflows/build.yml'
   push:
     branches:
       - main
